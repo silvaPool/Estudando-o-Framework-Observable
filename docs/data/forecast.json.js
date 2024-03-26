@@ -11,3 +11,4 @@ const station = await json(`https://api.weather.gov/points/${latitude},${longitu
 const forecast = await json(station.properties.forecastHourly);
 
 process.stdout.write(JSON.stringify(forecast));
+
